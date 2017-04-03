@@ -24,7 +24,7 @@ public class EndpointOne {
 	@GET
 	@RequestMapping(value = "/firtMethod", method = RequestMethod.GET)
 	public ResponseEntity<String> firstMethod(){
-		return new ResponseEntity<String>("Success", HttpStatus.ACCEPTED);
+		return new ResponseEntity<String>(serviceOne.firstMethod(), HttpStatus.ACCEPTED);
 	}
 	
 }

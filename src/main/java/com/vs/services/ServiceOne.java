@@ -1,8 +1,6 @@
 package com.vs.services;
 
-import org.springframework.stereotype.Service;
+public interface ServiceOne {
 
-@Service
-public class ServiceOne {
-
+	public String firstMethod();
 }
